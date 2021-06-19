@@ -1,0 +1,12 @@
+
+// things that came from code
+isLoading: false,
+
+// API
+location: data.name,
+countrylocation: data.sys.country,
+temperature: data.main.temp,
+feelsLike: data.main.feels_like,
+weatherCondition: data.weather[0].main,
+sunrise: data.sys.sunrise,
+sunset: data.sys.sunset
