@@ -35,24 +35,28 @@ export default class Main extends Component {
   }
 
   async fetchWeather(lat, lon) {
-    await fetch(
-      `${URL_API}?lat=${lat}&lon=${lon}&APPID=${KEY}&units=metric`
-    )
-    .then( res => res.json())
-    .then(data => {
-      this.setState({
-        isLoading: false,
-        location: data.name,
-        countrylocation: data.sys.country,
-        temperature: data.main.temp,
-        feelsLike: data.main.feels_like,
-        tempmin: data.main.temp_min,
-        tempmax: data.main.temp_max,
-        weatherCondition: data.weather[0].main,
-        sunrise: data.sys.sunrise,
-        sunset: data.sys.sunset
-        })
-    })
+    await fetch(`${URL_API}?lat=${lat}&lon=${lon}&APPID=${KEY}&units=metric`)
+      .then( res => res.json())
+      .then(data => {
+        console.log(data)
+
+        this.setState({
+          isLoading: false,
+          location: data.name,
+          countrylocation: data.sys.country,
+          temperature: this.float2int(data.main.temp),
+          feelsLike: this.float2int(data.main.feels_like),
+          tempmin: this.float2int(data.main.temp_min),
+          tempmax: this.float2int(data.main.temp_max),
+          weatherCondition: data.weather[0].main,
+          sunrise: data.sys.sunrise,
+          sunset: data.sys.sunset
+          })
+      })
+  }
+
+  float2int(value) {
+    return Math.ceil(value) | 0;
   }
 
   render() {
