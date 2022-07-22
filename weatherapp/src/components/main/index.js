@@ -35,6 +35,10 @@ export default class Main extends Component {
   }
 
   async fetchWeather(lat, lon) {
+    if (lat === null || lon === null ){
+      lat = 53.3302
+      lon = 6.3106
+    }
     await fetch(`${URL_API}?lat=${lat}&lon=${lon}&APPID=${KEY}&units=metric`)
       .then( res => res.json())
       .then(data => {
