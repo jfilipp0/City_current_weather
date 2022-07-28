@@ -24,7 +24,7 @@ export default class Main extends Component {
    componentDidMount() {
     navigator.geolocation.getCurrentPosition(
       position => {
-        this.fetchWeather(position.coords.latitude, position.coords.longitude)
+        this.fetchWeather(53.344, -6.2672)
       },
       error => {
         this.setState({
@@ -36,8 +36,8 @@ export default class Main extends Component {
 
   async fetchWeather(lat, lon) {
     if (lat === null || lon === null ){
-      lat = 53.3302
-      lon = 6.3106
+      lat = 53.344
+      lon = -6.2672
     }
     await fetch(`${URL_API}?lat=${lat}&lon=${lon}&APPID=${KEY}&units=metric`)
       .then( res => res.json())
