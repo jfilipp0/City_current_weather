@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/City_current_weather/static/css/main.d131f1c9.chunk.css",
+    "main.js": "/City_current_weather/static/js/main.1b1a70fb.chunk.js",
+    "main.js.map": "/City_current_weather/static/js/main.1b1a70fb.chunk.js.map",
+    "runtime-main.js": "/City_current_weather/static/js/runtime-main.db28aff6.js",
+    "runtime-main.js.map": "/City_current_weather/static/js/runtime-main.db28aff6.js.map",
+    "static/css/2.a7d885c9.chunk.css": "/City_current_weather/static/css/2.a7d885c9.chunk.css",
+    "static/js/2.86e83903.chunk.js": "/City_current_weather/static/js/2.86e83903.chunk.js",
+    "static/js/2.86e83903.chunk.js.map": "/City_current_weather/static/js/2.86e83903.chunk.js.map",
+    "static/js/3.9658a535.chunk.js": "/City_current_weather/static/js/3.9658a535.chunk.js",
+    "static/js/3.9658a535.chunk.js.map": "/City_current_weather/static/js/3.9658a535.chunk.js.map",
+    "index.html": "/City_current_weather/index.html",
+    "static/css/2.a7d885c9.chunk.css.map": "/City_current_weather/static/css/2.a7d885c9.chunk.css.map",
+    "static/css/main.d131f1c9.chunk.css.map": "/City_current_weather/static/css/main.d131f1c9.chunk.css.map",
+    "static/js/2.86e83903.chunk.js.LICENSE.txt": "/City_current_weather/static/js/2.86e83903.chunk.js.LICENSE.txt",
+    "static/media/weather-icons.css": "/City_current_weather/static/media/weathericons-regular-webfont.e218aee6.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.db28aff6.js",
+    "static/css/2.a7d885c9.chunk.css",
+    "static/js/2.86e83903.chunk.js",
+    "static/css/main.d131f1c9.chunk.css",
+    "static/js/main.1b1a70fb.chunk.js"
+  ]
+}
