@@ -24,9 +24,12 @@ export default class Main extends Component {
    componentDidMount() {
     navigator.geolocation.getCurrentPosition(
       position => {
-        this.fetchWeather(53.344, -6.2672)
+        // if you give your current position
+        this.fetchWeather(position.coords.latitude, position.coords.longitude)
       },
       error => {
+        // if you not give your position will appear the London, GB position
+        this.fetchWeather(51.5072, -0.1276) 
         this.setState({
           error: 'Error Retriving Weather Conditions'
         })
