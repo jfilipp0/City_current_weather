@@ -39,9 +39,12 @@ export default class Main extends Component {
       lat = 53.344
       lon = -6.2672
     }
-    await fetch(`${URL_API}?lat=${lat}&lon=${lon}&APPID=${KEY}&units=metric`)
-      .then( res => res.json())
-      .then(data => {
+    await fetch(`${URL_API}?lat=${lat}&lon=${lon}&APPID=${KEY}&units=metric`,{
+      method: 'GET',
+      cache: 'no-cache',
+    })
+      .then( (res) => res.json())
+      .then( (data) => {
         console.log(data)
 
         this.setState({
